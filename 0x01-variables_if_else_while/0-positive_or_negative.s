@@ -29,6 +29,8 @@ main:
 	movl	%eax, -4(%rbp)
 	cmpl	$0, -4(%rbp)
 	jns	.L2
+	movl	-4(%rbp), %eax
+	movl	%eax, %esi
 	leaq	.LC0(%rip), %rdi
 	movl	$0, %eax
 	call	printf@PLT
@@ -36,11 +38,15 @@ main:
 .L2:
 	cmpl	$0, -4(%rbp)
 	jle	.L4
+	movl	-4(%rbp), %eax
+	movl	%eax, %esi
 	leaq	.LC1(%rip), %rdi
 	movl	$0, %eax
 	call	printf@PLT
 	jmp	.L3
 .L4:
+	movl	-4(%rbp), %eax
+	movl	%eax, %esi
 	leaq	.LC2(%rip), %rdi
 	movl	$0, %eax
 	call	printf@PLT
