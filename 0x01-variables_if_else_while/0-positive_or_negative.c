@@ -2,12 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 
-int main(void)
-	/**
+int main(void) /**
 	 * precise if a number is positive or negative
 	 * RETURN: 0
 	 */
-{ int n; /** n is a random variable */
+{ int n;  /** n is a random variable */
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
