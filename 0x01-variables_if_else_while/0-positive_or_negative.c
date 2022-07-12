@@ -5,6 +5,7 @@
 int main(void)
 	/**
 	 * precise if a number is positive or negative
+	 * RETURN: 0
 	 */
 { int n;
 	srand(time(0));
