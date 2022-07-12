@@ -3,6 +3,9 @@
 #include <stdio.h>
 
 int main(void)
+	/**
+	 * precise if a number is positive or negative
+	 */
 { int n;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
