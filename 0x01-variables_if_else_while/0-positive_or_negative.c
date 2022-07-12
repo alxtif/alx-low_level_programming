@@ -4,9 +4,10 @@
 
 int main(void) /**
 	 * precise if a number is positive or negative
+	 * @n:description of n
 	 * RETURN: 0
 	 */
-{ int n;  /** n is a random variable */
+{ int n;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
@@ -25,5 +26,5 @@ int main(void) /**
 	printf("%d is zero\n", n);
 	}
 
-	return (0); /** result of function*/
+	return (0);
 }
