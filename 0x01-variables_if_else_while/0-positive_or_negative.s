@@ -2,11 +2,11 @@
 	.text
 	.section	.rodata
 .LC0:
-	.string	"The number %d is negative\n"
+	.string	"%d is negative\n"
 .LC1:
-	.string	"The number %d is positive\n"
+	.string	"%d is positive\n"
 .LC2:
-	.string	"The number %d is zero\n"
+	.string	"%d is zero\n"
 	.text
 	.globl	main
 	.type	main, @function
