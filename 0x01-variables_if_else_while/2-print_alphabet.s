@@ -13,8 +13,8 @@ main:
 	.cfi_def_cfa_register 6
 	subq	$16, %rsp
 	movb	$97, -1(%rbp)
-	cmpb	$122, -1(%rbp)
-	jg	.L2
+	jmp	.L2
+.L3:
 	movsbl	-1(%rbp), %eax
 	movl	%eax, %edi
 	call	putchar@PLT
@@ -23,11 +23,10 @@ main:
 	movb	%al, -1(%rbp)
 	movl	$10, %edi
 	call	putchar@PLT
-	movl	$0, %eax
-	jmp	.L3
 .L2:
+	cmpb	$122, -1(%rbp)
+	jle	.L3
 	movl	$0, %eax
-.L3:
 	leave
 	.cfi_def_cfa 7, 8
 	ret
