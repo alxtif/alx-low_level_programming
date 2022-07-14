@@ -3,16 +3,13 @@
 #include <stdio.h>
 
 /**
- * Short description of this main function,
- * it prescise if n is positive or negative.
- * n is a random variable.
- * RETURN: 0 when success.
+ * main -> assign a random number to the variable n each time it is executed
+ * and printbthe last digit of the number stored in the variable n
+ * RETURN: Always 0 (Success)
  */
 
-int main(void) /**
-		* Start of function main
-		* ok
-		*/
+int main(void) 
+
 { int n;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
