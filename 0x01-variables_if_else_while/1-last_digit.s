@@ -2,13 +2,13 @@
 	.text
 	.section	.rodata
 .LC0:
-	.string	"Last digit of %d is %d an is"
+	.string	"Last digit of %d is %d"
 .LC1:
-	.string	"grater than 5"
+	.string	"and is grater than 5"
 .LC2:
-	.string	"0"
+	.string	"and is 0"
 .LC3:
-	.string	"less than 6 and not 0"
+	.string	"and is less than 6 and not 0"
 	.text
 	.globl	main
 	.type	main, @function
