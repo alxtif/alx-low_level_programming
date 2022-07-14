@@ -3,12 +3,16 @@
 #include <stdio.h>
 
 /**
- * precise if a number is positive or negative
- * @n:description of n
- * RETURN: 0
+ * Short description of this main function,
+ * it prescise if n is positive or negative.
+ * n is a random variable.
+ * RETURN: 0 when success.
  */
 
-int main(void)
+int main(void) /**
+		* Start of function main
+		* ok
+		*/
 { int n;
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
