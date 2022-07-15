@@ -1,1 +1,1 @@
-Hope
+Determination
